@@ -50,3 +50,4 @@ function towerBuilder(nFloors) {
     output = [...output, ...finalArrToAdd]
   }
   return output
+}
