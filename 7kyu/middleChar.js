@@ -16,3 +16,16 @@
 //   #Output
 
 // The middle character(s) of the word represented as a string.
+function getMiddle(s) {
+  var middleNum = 0;
+  var avg = 0
+  for (var i = 0; i < s.length; i++) {
+    middleNum += i;
+    avg = middleNum / s.length + 1;
+  }
+  if (s.length % 2 === 0) {
+    return `${s[Math.floor(avg - 1)]}${s[Math.floor(avg)]}`
+  } else {
+    return `${s[Math.floor(avg - 1)]}`
+  }
+}
