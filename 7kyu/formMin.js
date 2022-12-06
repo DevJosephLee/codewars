@@ -23,3 +23,12 @@
 // ALL translations are welcomed
 // Enjoy Learning!!
 // Zizou
+function minValue(values) {
+  const output = [];
+  for (let i = 0; i < values.length; i++) {
+    if (values.indexOf(values[i]) === i) {
+      output.push(values[i]);
+    }
+  }
+  return Number(output.sort().join(''));
+}
