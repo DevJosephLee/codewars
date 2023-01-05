@@ -21,3 +21,11 @@
 // Help Suzuki pack his coal basket!
 // Help Suzuki rake his garden!
 // Suzuki needs help lining up his students!
+function stairsIn20(s) {
+  let oneYear = 0;
+  for (let i = 0; i < s.length; i++) {
+    const sum = s[i].reduce((acc, cur) => acc + cur, 0);
+    oneYear += sum;
+  }
+  return oneYear * 20;
+}
