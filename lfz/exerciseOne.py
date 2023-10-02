@@ -7,8 +7,10 @@
 L = 'abcdefghijklmnopqrstuvwxyz'
 result = []
 
-for letters in L:
-    tuples = (L.index(letters) + 1, letters)
-    result.append(tuples)
+def exerciseOne(L):
+  for letters in L:
+      tuples = (L.index(letters) + 1, letters)
+      result.append(tuples)
+  print(result)
 
-return(result)
+exerciseOne('abcdefghijklmnopqrstuvwxyz')
