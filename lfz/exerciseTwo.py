@@ -6,7 +6,9 @@
 
 dictionary = {}
 
-for num in range(16):
-    dictionary[str(num)] = format(num, "04b")
+def exerciseTwo():
+  for num in range(16):
+      dictionary[str(num)] = format(num, "04b")
+  print(dictionary)
 
-return dictionary
+exerciseTwo()

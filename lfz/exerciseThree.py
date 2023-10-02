@@ -6,13 +6,16 @@
 # Example Output: 0
 
 s = '(a((kl(mns)t)uvwz)'
-count_open = 0
-count_close = 0
 
-for char in s:
-  if char == '(':
-    count_open += 1
-  elif char == ')':
-    count_close += 1
+def BrackerMatcher(s):
+  count_open = 0
+  count_close = 0
 
-return count_open == count_close
+  for char in s:
+    if char == '(':
+      count_open += 1
+    elif char == ')':
+      count_close += 1
+  print(count_open == count_close)
+
+BrackerMatcher('(a((kl(mns)t)uvwz)')
