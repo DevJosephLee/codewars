@@ -7,4 +7,4 @@
 # Return value as boolean values, true for the string to contains "English", false for it does not.
 
 def sp_eng(sentence):
-    return ''.join(char for char in sentence if char in 'ENGLISH' or char in 'english' ).lower() == 'english'
+  return 'english' in sentence.lower()
